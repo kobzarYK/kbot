@@ -61,7 +61,7 @@ arm: format get
 	CGO_ENABLED=0 GOOS=$(detected_OS) GOARCH=arm go build -v -o kbot -ldflags "-X="github.com/kobzaryk/kbot/cmd.appVersion=${VERSION}
 	docker build --build-arg name=arm -t ${REGESTRY}/${APP}:${VERSION}-$(detected_OS)-arm .
 
-image: build
+image: 
 	docker build . -t ${REGESTRY}/${APP}:${VERSION}-$(detected_arch)
 
 push:
