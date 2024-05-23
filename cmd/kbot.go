@@ -47,7 +47,7 @@ to quickly create a Cobra application.`,
 			case "hello":
 				err = m.Send(fmt.Sprintf("Hello I'm kbot %s!", appVersion))
 			case "yura":
-				err = m.Send(fmt.Sprintf("Hello Yura I'm kbot %s!", appVersion))	
+				err = m.Send(fmt.Sprintf("Hello Yura I'm kbot %s!", appVersion))
 
 			}
 			return err
